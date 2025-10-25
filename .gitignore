@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+
+# User-specific
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Local config
+appsettings.*.local.json

@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PracticeExamV2.Models;
+using PracticeExamV2.ViewModel;
 
 namespace PracticeExamV2.Controllers
 {

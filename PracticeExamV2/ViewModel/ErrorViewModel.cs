@@ -1,4 +1,4 @@
-namespace PracticeExamV2.Models
+namespace PracticeExamV2.ViewModel
 {
     public class ErrorViewModel
     {

@@ -22,7 +22,7 @@ public class InstructorController : Controller
 
         var query = _context.Instructors.Include(i => i.CourseAssignment!)
                                                     .ThenInclude(ca => ca.Course)
-                                                    .ThenInclude(c => c.Department)
+                                                    .ThenInclude(c => c!.Department)
                                                     .OrderBy(i => i.ID);
 
         var totalItems = await query.CountAsync();

@@ -1,0 +1,30 @@
+﻿@model List<PracticeExamV2.Models.Instructor>
+@{
+    ViewData["Title"] = "Instructors";
+}
+<h2>Instructors</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>InstructorID</th>
+            <th>LastName</th>
+            <th>FirstName</th>
+            <th>HireDate</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.ID</td>
+                <td>@c.LastName</td>
+                <td>@c.FirstName</td>
+                <td>@c.EnrollmentDate</td>
+                <td>
+                    <a asp-controller="Instructor" asp-action="Edit" asp-route-id="@c.ID" class="btn btn-sm btn-outline-primary">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

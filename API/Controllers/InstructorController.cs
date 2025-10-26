@@ -42,6 +42,11 @@ public class InstructorController : ControllerBase
         if (instructor == null)
             return BadRequest(new { message = "Request body is required." });
 
+        if(instructor.ID == 0)
+        {
+            instructor.ID = id;
+        }
+
         if (id != instructor.ID)
             return BadRequest(new { message = "Route id and body id must match." });
 
